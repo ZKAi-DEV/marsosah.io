@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<head>
+    <!-- Tambahkan ini di dalam tag <head> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <h1>My E-Commerce Site</h1>
+    </header>
+    <span class="menu-btn" onclick="toggleMenu()">&#9776;</span>
+    <div class="menu" id="menu">
+        <a href="../index.html">Beranda</a>
+        <a href="index.html">Product</a>
+        <a href="#">Testimoni</a>
+        <a href="../tentang kami/template.html">Tentang Kami</a>
+        <a href="#">Hubungi kami</a>
+    </div>
+    <div class="cart" id="cart-container">
+        <a href="#" id="cart">
+            <img src="cart2.png" alt="Cart Icon" style="width: 50px; height: 40px;">
+            <span id="cart-count">(0)</span>
+        </a>
+    </div>
+    <main>
+        <div class="product" data-id="1" data-name="bawang merah 1kg" data-price="10.000">
+            <img src="bw.png" alt="Product 1" class="product-image">
+            <h3>bawang merah 1 kg</h3>
+            <p>Price: 10.000</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="2" data-name="Product 2" data-price="10.000">
+            <img src="bw.png" alt="Product 2" class="product-image">
+            <h3>Product 1</h3>
+            <p>Price: 10.000</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="3" data-name="Product 3" data-price="10.000">
+            <img src="bw.png" alt="Product 3" class="product-image">
+            <h3>Product 1</h3>
+            <p>Price: 10.000</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="4" data-name="Product 4" data-price="10.000">
+            <img src="bw.png" alt="Product 4" class="product-image">
+            <h3>Product 1</h3>
+            <p>Price: 10.000</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="5" data-name="Product 5" data-price="10.000">
+            <img src="bw.png" alt="Product 5" class="product-image">
+            <h3>Product 1</h3>
+            <p>Price: 10.000</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="6" data-name="Product 6" data-price="10.000">
+            <img src="bw.png" alt="Product 6" class="product-image">
+            <h3>Product 1</h3>
+            <p>Price: 10.000</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="7" data-name="Product 7" data-price="20">
+            <img src="bp.png" alt="Product 7" class="product-image">
+            <h3>Product 2</h3>
+            <p>Price: 20.000</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="8" data-name="Product 8" data-price="20">
+            <img src="bp.png" alt="Product 8" class="product-image">
+            <h3>Product 2</h3>
+            <p>Price: 20.000</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="9" data-name="Product 9" data-price="20">
+            <img src="bp.png" alt="Product 9" class="product-image">
+            <h3>Product 2</h3>
+            <p>Price: 20.000</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="10" data-name="Product 10" data-price="20">
+            <img src="bp.png" alt="Product 10" class="product-image">
+            <h3>Product 2</h3>
+            <p>Price: 20.000</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="11" data-name="Product 11" data-price="20">
+            <img src="bp.png" alt="Product 11" class="product-image">
+            <h3>Product 2</h3>
+            <p>Price: 20.000</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="12" data-name="Product 12" data-price="20.000">
+            <img src="bp.png" alt="Product 12" class="product-image">
+            <h3>Product 2</h3>
+            <p>Price: 20.000</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        </section>
+        <section id="cart-items" class="hidden">
+            <h2>Cart Items</h2>
+            <ul id="cart-list"></ul>
+            <p id="total-price">Total: 0</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
